@@ -6,7 +6,7 @@ $title_font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: $title_font;
+    font-family: "Noto serif JP";
 }
 
 li {
@@ -79,33 +79,34 @@ li {
         z-index: 2;
         width: 100%;
         height: 100%;
-        .contents {
-            margin-left: 10%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            h2 {
-                font-family: $title_font;
-                font-weight: lighter;
-                font-size: 40px;
-                color: #fff;
-                line-height: 100px;
-            }
-            h3 {
-                line-height: 60px;
-                font-size: 40px;
-                color: #fff;
-                font-weight: lighter;
-            }
-            .text {
-                margin-top: 30px;
-                width: 60%;
-                color: #fff;
-                font-size: 28px;
-                line-height: 48px;
+        display: flex;
+        justify-content: space-between;
+        //このwrapperはtitleクラスとcontentsクラス2つ含んでいる。
+        .wrapper {
+            width: 60%;
+            .contents {
+                margin-left: 10%;
+                
+                h2 {
+                    font-weight: lighter;
+                    font-size: 40px;
+                    color: #fff;
+                    line-height: 100px;
+                }
+                h3 {
+                    line-height: 60px;
+                    font-size: 40px;
+                    color: #fff;
+                    font-weight: lighter;
+                }
+                .text {
+                    margin-top: 30px;
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 48px;
+                }
             }
         }
-        
     }
 }
 
