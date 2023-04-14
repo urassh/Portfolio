@@ -14,7 +14,7 @@ li {
 }
 
 .container {
-    padding: 80px 100px;
+    padding: 8% 10%;
 }
 
 #name-view {
@@ -43,5 +43,20 @@ li {
             }
         }   
     }
-    
+}
+
+@media screen and (max-width: 800px) {
+	#name-view {
+        background-color: #28003a;
+        #particles-js {
+            .container {
+                h1 {
+                    font-size: 18vw;
+                }
+                h2 {
+                    font-size: 14vw;
+                }
+            }
+        }
+    }
 }

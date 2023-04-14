@@ -2,7 +2,7 @@
 particlesJS("particles-js",{
 	"particles":{
 		"number":{
-			"value":38,//この数値を変更すると幾何学模様の数が増減できる
+			"value": 46,//この数値を変更すると幾何学模様の数が増減できる
 			"density":{
 				"enable":true,
 				"value_area":800
@@ -20,7 +20,7 @@ particlesJS("particles-js",{
 		"nb_sides":3//多角形の角の数
 	},
 	"image":{
-		"width":190,
+		"width":200,
 		"height":100
 	}
 	},
