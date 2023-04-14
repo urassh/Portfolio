@@ -170,6 +170,58 @@ li {
     }
 }
 
+#links {
+    background-color: #e3f5ff;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    .container {
+        .title {
+            color: #061a26;
+        }
+        ul {
+            margin-left: 6%;
+            margin-top: 3%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            li {
+                transform: scale(1);
+                transition: all .3s;
+                a {
+                    color: #061a26;
+                    text-decoration: none;
+                    font-size: 48px;
+                    letter-spacing: 1px;
+                    font-weight: 100;
+                }
+                &:hover {
+                    a {
+                        color: #29aeff;
+                    }
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #061a26;
+    .copy-right {
+        font-size: 24px;
+        letter-spacing: 3px;
+        line-height: 100px;
+        color: #fff;
+        
+    }
+}
+
 @media screen and (max-width: 800px) {
 	#name-view {
         background-color: #28003a;
