@@ -28,8 +28,30 @@ li {
 .title {
     font-family: $title_font;
     font-weight: lighter;
-    font-size: 80px;
+    font-size: 68px;
     color: #fff;
+}
+
+.pentagon-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right, #4b00bd 0%, #6c98ff 100%);
+    clip-path: polygon(0 0, 40% 0, 100% 100%, 0% 100%);
+}
+
+.pentagon-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #e629ff24 0%, #6fc8ff 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
 }
 
 #name-view {
@@ -61,18 +83,8 @@ li {
 #about {
     background-color: #061a26;
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     position: relative;
-    .pentagon-left {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        height: 100%;
-        width: 50%;
-        background: linear-gradient(to right, #4b00bd 0%, #6c98ff 100%);
-        clip-path: polygon(0 0, 40% 0, 100% 100%, 0% 100%);
-    }
     .container {
         display: flex;
         justify-content: space-between;
@@ -83,18 +95,18 @@ li {
                 margin-left: 10%;
                 h2 {
                     font-weight: lighter;
-                    font-size: 40px;
+                    font-size: 36px;
                     color: #fff;
-                    line-height: 100px;
+                    line-height: 80px;
                 }
                 h3 {
                     line-height: 60px;
-                    font-size: 40px;
+                    font-size: 36px;
                     color: #fff;
                     font-weight: lighter;
                 }
                 .text {
-                    margin-top: 30px;
+                    margin-top: 24px;
                     color: #fff;
                     font-size: 24px;
                     line-height: 48px;
@@ -110,16 +122,6 @@ li {
     width: 100%;
     height: 700px;
     position: relative;
-    .pentagon-right {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        width: 50%;
-        height: 100%;
-        background: linear-gradient(to right, #e629ff24 0%, #6fc8ff 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
-    }
     .container {
         .title {
             color: #061a26;
