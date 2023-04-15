@@ -207,12 +207,29 @@ li {
     }
 }
 
+#works {
+    width: 100%;
+    height: 1000px;
+    background-color: #010101;
+    position: relative;
+    .container {
+        .title {
+            display: inline-block;
+            background: linear-gradient(90deg, #29aeff, #e629ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
 footer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #061a26;
+    position: relative;
     .copy-right {
         font-size: 24px;
         letter-spacing: 3px;
