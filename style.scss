@@ -13,6 +13,8 @@ li {
     list-style: none;
 }
 
+//section毎の高さ
+
 // 共通レイアウト設定
 .container {
     padding: 8% 10%;
@@ -82,7 +84,7 @@ li {
 #about {
     background-color: #061a26;
     width: 100%;
-    min-height: 700px;
+    height: 700px;
     position: relative;
     .container {
         display: flex;
@@ -269,6 +271,13 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    .title {
+        font-family: $title_font;
+        font-weight: lighter;
+        font-size: 52px;
+        color: #fff;
+    }
+
 	#name-view {
         background-color: #28003a;
         #particles-js {
@@ -281,5 +290,70 @@ footer {
                 }
             }
         }
+    }
+    #about {
+        .container {
+            .wrapper {
+                width: 70%;
+                .contents {
+                    h2 {
+                        font-size: 30px;
+                    }
+                    h3 {
+                        font-size: 30px;
+                    }
+                    .text {
+                        font-size: 18px;
+                        line-height: 48px;
+                    }
+                }
+            }
+        }
+    }
+    #statement {
+        .container {
+            .wrapper {
+                .sub-title {
+                    font-size: 36px;
+                    line-height: 60px;
+                }
+                .text {
+                    font-size: 18px;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+    #skill {
+        .container {
+            .capable-lists {
+                .capable-item {
+                    font-size: 28px;
+                    height: 25%;
+                }
+            }
+        }
+    }
+    #links {
+        .container {
+            ul {
+                li {
+                    a {
+                        font-size: 32px;
+                        letter-spacing: 1px;
+                        font-weight: lighter;
+                    }
+                    &:hover {
+                        a {
+                            color: #29aeff;
+                        }
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+    }
+    #works {
+        display: none;
     }
 }
