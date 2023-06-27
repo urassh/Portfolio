@@ -270,6 +270,7 @@ footer {
     }
 }
 
+//tablet
 @media screen and (max-width: 800px) {
     .title {
         font-family: $title_font;
@@ -294,7 +295,7 @@ footer {
     #about {
         .container {
             .wrapper {
-                width: 70%;
+                width: 100%;
                 .contents {
                     h2 {
                         font-size: 30px;
@@ -360,3 +361,5 @@ footer {
         display: none;
     }
 }
+
+//smartphone
